@@ -1,0 +1,2 @@
+- name: configuring apache cassandra
+  template: src=templates/cassandra.yaml dest=/etc/cassandra/conf/cassandra.yaml

@@ -1,0 +1,10 @@
+---
+- hosts: all
+  user: vagrant
+  become: true
+  tasks:
+  - include: setup-repo.yml
+  - include: install-java.yml
+  - include: install-cassandra.yml
+  - include: configure-cassandra.yml
+  - include: start-cassandra.yml

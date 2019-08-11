@@ -1,0 +1,7 @@
+- name: install cassandra
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - cassandra
+    - libaio

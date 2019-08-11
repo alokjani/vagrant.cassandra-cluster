@@ -1,0 +1,6 @@
+- name: setup cassandra repo
+  yum_repository:
+    name: cassandra
+    description: Apache Cassandra
+    baseurl: https://www.apache.org/dist/cassandra/redhat/311x/
+    gpgcheck: no
